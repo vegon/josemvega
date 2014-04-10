@@ -1,3 +1,5 @@
 .DS_Store
 config.codekit
 .gitignore
+humans.txt
+robots.txt
