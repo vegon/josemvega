@@ -1,0 +1,258 @@
+/* Variables y fuentes */
+
+$principal: #fc8125; //naranja
+$secundario: #393939; //negro
+$terciario: #eef2f3; //gris
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,900);
+
+//////////////* fin de Variables */
+
+
+/* General */
+
+
+
+body, h1, h2, h3, h4, h5, h6, p {
+	color: $secundario;
+	font-family: "Source Sans Pro";
+	font-weight: 400;
+}
+
+nav {
+	background: rgba(255,255,255,1);
+	-webkit-box-shadow: 0 1px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 1px rgba(0,0,0,0.1);
+	box-shadow: 0 1px rgba(0,0,0,0.1);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+	-ms-box-shadow: 0 1px rgba(0,0,0,0);
+	font-weight: 900;
+	.titulo {
+		display: inline-block;
+		padding: 10px 0;
+		font-size: 20px;
+		line-height: 1.6;
+		span {
+			-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			-ms-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+		}
+		span.punto {
+			color: $principal;
+		}
+		span.punto1 {
+			margin-left: 1px;
+		}
+		span.letra {
+			opacity: 1;
+		}
+	}
+	a span {
+		color: $secundario;
+	}
+	ul {
+		margin-bottom: 0 !important;
+		float: right;
+	}
+	li {
+		padding: 10px 0;
+		font-size: 20px;
+		a {
+			display: inline-block;
+			color: $principal;
+			text-transform: uppercase;
+			&:hover, &:focus {
+				color: $principal;
+			}
+		}
+		&:hover {
+			-webkit-box-shadow: inset 0px -4px 0px 0px $principal;
+			-moz-box-shadow: inset 0px -4px 0px 0px $principal;
+			box-shadow: inset 0px -4px 0px 0px $principal;
+			-webkit-transition: all 0.4s ease;
+			-moz-transition: all 0.4s ease;
+			-ms-transition: all 0.4s ease;
+			-o-transition: all 0.4s ease;
+			transition: all 0.4s ease;
+			-ms-box-shadow: inset 0px -4px 0px 0px $principal;
+		}	
+	}
+	li.activo {
+		-webkit-box-shadow: inset 0px -4px 0px 0px $principal;
+		-moz-box-shadow: inset 0px -4px 0px 0px $principal;
+		box-shadow: inset 0px -4px 0px 0px $principal;
+		-webkit-transition: all 0.4s ease;
+		-moz-transition: all 0.4s ease;
+		-ms-transition: all 0.4s ease;
+		-o-transition: all 0.4s ease;
+		transition: all 0.4s ease;
+		-ms-box-shadow: inset 0px -4px 0px 0px $principal;
+	}
+}
+.stuck {
+	position: fixed;
+	top: 0px;
+	z-index: 9999;
+	width: 100%;
+	}
+nav.inicio {
+	background-color: transparent;
+	-webkit-box-shadow: 0 1px rgba(0,0,0,0);
+	-moz-box-shadow: 0 1px rgba(0,0,0,0);
+	box-shadow: 0 1px rgba(0,0,0,0);
+	-ms-box-shadow: 0 1px rgba(0,0,0,0);
+	padding-top: 50px;
+	li:hover {
+		-webkit-box-shadow: 0 4px rgba(0,0,0,0);
+		-moz-box-shadow: inset 0px -4px 0px 0px white;
+		box-shadow: inset 0px -4px 0px 0px white;
+		-ms-box-shadow: inset 0px -4px 0px 0px white;
+	}
+	.titulo {
+		box-shadow: inset 0px -4px 0px 0px white;
+		width: 50px;
+		span.letra {
+			opacity: 0;
+		}
+		span.punto1 {
+			margin-left: -31px;
+		}
+	}
+	span.punto {
+		color: white;
+	}
+	span,a {
+		color: white;
+	}
+	a:hover, a:focus {
+		color: white;
+	}
+}
+
+section {
+	position: relative;
+	padding: 0 0 60px;
+}
+
+.flecha {
+	position: absolute;
+	margin:0 49%;
+	width: 0; 
+	height: 0;
+	border-right: 20px solid transparent; 
+	border-left: 20px solid transparent;
+}
+
+.seccion {
+	margin: 80px 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 200;
+}
+.seccion:before,.seccion:after {
+	content: "\20\2014\20";
+}
+
+//////////////* fin de General */
+
+
+/* Inicio */
+
+#inicio {
+	z-index: 1;
+	overflow: hidden;
+	min-height: 435px;
+	max-height: 900px;
+	height: 93%;
+	background-color: $principal;
+	color: white;
+	position: relative;
+	h1,h2,p,a {
+		color: white;
+	}
+	a:hover {
+		color: $secundario;
+	}
+	.introduccion {
+		width: 500px;
+		height: 84%;
+		min-height: 250px;
+		max-height: 700px;
+		position: absolute;
+		span {
+			position: absolute;
+			bottom: 0;
+		}
+	}
+}
+
+.flecha-inicio {
+	border-top: 20px solid $principal;
+}
+
+//////////////* fin de Inicio */
+
+
+/* Habilidades */
+
+#habilidades {
+	z-index: 2;
+	.row .row {
+		padding: 60px 0;
+		&.primero {
+			padding-top: 0;
+		}
+	}
+}
+
+.flecha-habilidades {
+	border-top: 20px solid white;
+}
+
+//////////////* fin de Habilidades */
+
+
+/* Sobre mi */
+
+#sobre-mi {
+	z-index: 2;
+	background-color: $terciario;
+}
+.flecha-sobre-mi {
+	border-top: 20px solid $terciario;
+}
+
+//////////////* fin de Sobre mi */
+
+
+/* Contacta */
+
+#contacta {
+	background-color: lighten($secundario, 20%);
+	z-index: 2;
+	p, h2, h3 {
+		color: white;
+	}
+}
+
+//////////////* fin de Contacta */
+
+/* Footer */
+
+footer {
+	background-color: $secundario;
+	padding: 30px 0;
+	z-index: 2;
+	color: white;
+	p, h2, h3 {
+		color: white;
+	}
+}
+
+//////////////* fin de Contacta */
