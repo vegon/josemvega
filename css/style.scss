@@ -276,12 +276,13 @@ section {
 
 footer {
 	background-color: $secundario;
+	p {
+		color: lighten($secundario, 25%);
+		font-size: 1rem;
+		margin: 0;
+	}
 	padding: 30px 0;
 	z-index: 2;
-	color: white;
-	p, h2, h3 {
-		color: white;
-	}
 }
 
 //////////////* fin de Contacta */
