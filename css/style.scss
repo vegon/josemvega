@@ -181,6 +181,10 @@ section {
 	max-height: 900px;
 	height: 93%;
 	background-color: $principal;
+	background-image: url('/img/bg-inicio.png');
+	background-attachment: fixed;
+	background-position: center 50%;
+	background-repeat: no-repeat;
 	color: white;
 	position: relative;
 	h1,h2,p,a {
