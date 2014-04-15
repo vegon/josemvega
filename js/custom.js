@@ -27,16 +27,16 @@ var tween2 = TweenMax.fromTo(".flecha-habilidades", 0.5,
 		{"margin": "0 49%"},
 		{"margin": "-30px 49% 0"}
 	);
-var scene2 = new ScrollScene({triggerElement: "#trigger-flecha-habilidades", duration: 100})
+var scene2 = new ScrollScene({offset: 1500, duration: 400})
 				.setTween(tween2)
 				.addTo(controller);
 				
 // Flecha de contacta
-var tween3 = TweenMax.fromTo(".flecha-contacta", 0.5,
+var tween3 = TweenMax.fromTo(".flecha-sobre-mi", 0.5,
 		{"margin": "0 49%"},
 		{"margin": "-30px 49% 0"}
 	);
-var scene3 = new ScrollScene({triggerElement: "#trigger-flecha-contacta", duration: 100})
+var scene3 = new ScrollScene({offset: 2300, duration: 400})
 				.setTween(tween3)
 				.addTo(controller);
 				
