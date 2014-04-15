@@ -4,6 +4,7 @@
 // @codekit-prepend '../bower_components/ScrollMagic/js/jquery.scrollmagic.min.js'
 // @codekit-prepend '../bower_components/jquery-waypoints/waypoints.min.js'
 // @codekit-prepend '../bower_components/jQuery-One-Page-Nav/jquery.nav.js'
+// @codekit-prepend '../bower_components/unveil/jquery.unveil.min.js'
 
 $(function() {
   
@@ -74,5 +75,20 @@ var scene5 = new ScrollScene({offset: 0, duration: 800})
 				.setTween(tween5)
 				.addTo(controller);
 
+
+
+//////// Imagenes
+$("img").unveil(-100,function() {
+  $(this).load(function() {
+    this.style.opacity = 1;
+    this.style.padding = 0;
+  });
+});
+
+
+
+/////// Correo y Tlf
+$('.datos span.email').html('jm.vega.farina@gmail.com');
+$('.datos span.tlf').html('680 140 504');
 
 });
