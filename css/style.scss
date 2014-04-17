@@ -261,6 +261,10 @@ section {
 
 #contacta {
 	background-color: lighten($secundario, 20%);
+	background-image: url('/img/bg-contacta.jpg');
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-attachment: fixed;
 	z-index: 2;
 	p, h2, h3 {
 		color: white;
