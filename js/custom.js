@@ -74,6 +74,13 @@ var tween5 = TweenMax.fromTo(".introduccion", 0.5,
 var scene5 = new ScrollScene({offset: 0, duration: 800})
 				.setTween(tween5)
 				.addTo(controller);
+var tween6 = TweenMax.fromTo(".fondo", 0.5,
+		{"margin": "0 0 0 0"},
+		{"margin": "600px 0 0 0"}
+	);
+var scene6 = new ScrollScene({offset: 0, duration: 800})
+				.setTween(tween6)
+				.addTo(controller);
 
 
 

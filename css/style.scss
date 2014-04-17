@@ -181,19 +181,21 @@ section {
 	max-height: 900px;
 	height: 93%;
 	background-color: $principal;
-	background-image: url('/img/bg-inicio.png');
-	background-attachment: fixed;
-	background-position: center 50%;
-	background-repeat: no-repeat;
 	color: white;
 	position: relative;
 	h1,h2,p,a {
 		color: white;
 	}
+	h1 {
+		font-size: 4rem;
+	}
+	h2 {
+		font-size: 3.25rem;
+	}
 	a:hover {
 		color: $secundario;
 	}
-	.introduccion {
+	.introduccion, .fondo {
 		width: 500px;
 		height: 84%;
 		min-height: 250px;
@@ -203,6 +205,9 @@ section {
 			position: absolute;
 			bottom: 0;
 		}
+	}
+	.fondo {
+		width: 100%;
 	}
 }
 
