@@ -85,10 +85,9 @@ var scene6 = new ScrollScene({offset: 0, duration: 800})
 
 
 //////// Imagenes
-$("img").unveil(-100,function() {
+$("img").unveil(-150,function() {
   $(this).load(function() {
     this.style.opacity = 1;
-    this.style.padding = 0;
   });
 });
 
