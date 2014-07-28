@@ -1,0 +1,67 @@
+<!doctype html>
+<html class="no-js" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Jose Manuel Vega | Desarrollo y soluciones web</title>
+    <%= stylesheet_link_tag "foundation.min", "normalize", "style" %>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <%= javascript_include_tag  "vendor/modernizr.js" %>
+  </head>
+  <body>
+    <!-- MENU -->
+    <nav class="nav_principal inicio stuck hide-for-small-only">
+    <div class="row">
+        <div class="large-3 columns">
+          <a href="#inicio"><span class="titulo"><span class="inicial">J</span><span class="letra">o</span><span class="letra">s</span><span class="letra">e</span><span class="punto punto1">.</span><span class="inicial">M</span><span class="punto">.</span><span class="inicial">V</span><span class="letra">e</span><span class="letra">g</span><span class="letra">a</span></span></a>
+        </div>
+        <div class="large-7 columns">
+          <ul class="inline-list">
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#sobre-mi">Sobre mi</a></li>
+            <li><a href="#contacta">Contacta</a></li>
+          </ul>
+        </div>
+    </div>
+    </nav>
+    
+    <nav class="nav_principal inicio stuck show-for-small-only">
+    <div class="row">
+        <div class="small-2 columns">
+          <a href="#inicio"><span class="titulo"><span class="inicial">J</span><span class="punto punto1">.</span><span class="inicial">M</span><span class="punto">.</span><span class="inicial">V</span></a>
+        </div>
+        <div class="small-10 columns">
+          <ul class="inline-list">
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#sobre-mi">Sobre mi</a></li>
+            <li><a href="#contacta">Contacta</a></li>
+          </ul>
+        </div>
+    </div>
+    </nav>
+
+    <%= yield %>
+
+    <footer>
+      <div class="row">
+        <div class="large-12 columns">
+          <p class="text-right">Página diseñada por Jose Manuel Vega &copy josemvega.com</p>
+        </div>
+      </div>
+    </footer>
+    <%= javascript_include_tag "all" %>
+    <script>
+      $(document).foundation();
+    </script>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-50188797-1', 'josemvega.com');
+    ga('send', 'pageview');
+  </script>
+  </body>
+</html>
