@@ -69,4 +69,16 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+ 
+end
+
+password = ENV["PASSWORD"]
+activate :deploy do |deploy|
+  deploy.method   = :sftp
+  deploy.host     = "146.185.160.99"
+  deploy.port     = 22
+  deploy.path     = "/srv/users/serverpilot/apps/josemvega"
+  # Optional Settings
+  deploy.user     = "serverpilot" # no default
+  deploy.password = password # no default
 end
